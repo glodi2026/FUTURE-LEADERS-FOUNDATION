@@ -1,0 +1,603 @@
+
+/* Main website colours */
+:root {
+    --olive: #0c087f;
+    --ivory: #F7F3E8;
+    --gold: #C5A66A;
+    --dark: #30382A;
+}
+
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--ivory);
+    color: var(--dark);
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--olive);
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+/* Welcome Section */
+.hero-section {
+    padding: 80px 0;
+    background-color: var(--ivory);
+}
+
+.hero-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+.hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    transform: translateY(-30px);
+}
+
+.hero-text h1 {
+    color: var(--olive);
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.hero-text p {
+    font-size: 25px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: var(--olive);
+    color: white;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.hero-button:hover {
+    background-color: var(--gold);
+    color: var(--dark);
+}
+
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .hero-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-button {
+        font-size: 16px;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+    }
+
+    .hero-image{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+.hero-text {
+    transform: translateY(30px) !important;
+    text-align: center;
+}
+
+  
+}
+/* Footer */
+.footer {
+    background-color: var(--olive);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--ivory);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ivory);
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: var(--gold);
+    color: var(--dark);
+    border-color: var(--gold);
+}
+
+
+/* ABOUT US PAGE */
+
+.about-hero {
+    background-color: var(--olive);
+    color: var(--ivory);
+    text-align: center;
+    padding: 65px 30px;
+    margin: 30px auto;
+    border: 3px solid #0c087f;
+    border-radius: 20px;
+    max-width: 1150px;
+}
+
+.about-hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.about-section {
+    background-color: var(--ivory);
+    padding: 35px;
+    margin: 25px auto;
+    max-width: 1150px;
+    border: 3px solid #0c087f;
+    border-radius: 18px;
+}
+
+.about-section h2 {
+    color: var(--olive);
+    margin-bottom: 18px;
+}
+
+.about-section h3 {
+    color: var(--olive);
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.about-section p {
+    line-height: 1.8;
+}
+
+.about-section .row {
+    row-gap: 25px;
+}
+
+
+/* PROGRAMS PAGE */
+
+.programs-hero {
+    background-color: #0c087f;
+    color: #F7F3E8;
+    text-align: center;
+    padding: 65px 30px;
+    margin: 30px auto;
+    border: 3px solid #0c087f;
+    border-radius: 20px;
+    max-width: 1150px;
+}
+
+.programs-hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.programs-hero p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.programs-section {
+    background-color: #F7F3E8;
+    padding: 30px 20px;
+}
+
+.program-card {
+    background-color: #F7F3E8;
+    border: 3px solid #0c087f;
+    border-radius: 18px;
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 1100px;
+}
+
+.program-card h2 {
+    color: #0c087f;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.program-card p {
+    color: #30382A;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* OUR IMPACT PAGE */
+
+.impact-hero {
+    background-color: #0c087f;
+    color: #F7F3E8;
+    text-align: center;
+    padding: 65px 30px;
+    margin: 30px auto;
+    border: 3px solid #0c087f;
+    border-radius: 20px;
+    max-width: 1150px;
+}
+
+.impact-hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.impact-hero p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.impact-section {
+    background-color: #F7F3E8;
+    padding: 30px 20px;
+}
+
+.impact-card {
+    background-color: #F7F3E8;
+    border: 3px solid #0c087f;
+    border-radius: 18px;
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 1100px;
+}
+
+.impact-card h2 {
+    color: #0c087f;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.impact-card p {
+    color: #30382A;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* OUR TEAM PAGE */
+
+.team-hero {
+    background-color: #0c087f;
+    color: #F7F3E8;
+    text-align: center;
+    padding: 65px 30px;
+    margin: 30px auto;
+    border: 3px solid #0c087f;
+    border-radius: 20px;
+    max-width: 1150px;
+}
+
+.team-hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.team-hero p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.team-section {
+    padding: 40px 20px;
+    background-color: #F7F3E8;
+}
+
+.team-card {
+    background-color: #F7F3E8;
+    border: 3px solid #0c087f;
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    height: 90%;
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #0c087f;
+    margin-bottom: 20px;
+}
+
+.team-card h2 {
+    color: #0c087f;
+    font-size: 21px;
+}
+
+.team-card h3 {
+    font-size: 16px;
+    color: #555;
+}
+
+.team-card p {
+    color: #30382A;
+    line-height: 1.7;
+}
+
+/* GET INVOLVED PAGE */
+
+.involved-hero {
+    background-color:#0c087f; 
+    color: #F7F3E8;
+    text-align: center;
+    padding: 65px 30px;
+    margin: 30px auto;
+    border: 3px solid #0c087f;
+    border-radius: 20px;
+    max-width: 1150px;
+}
+
+.involved-hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.involved-hero p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.involved-section {
+    padding: 40px 20px;
+    background-color: #F7F3E8;
+}
+
+.involved-card {
+    background-color: #F7F3E8;
+    border: 3px solid #0c087f;
+    border-radius: 18px;
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 1100px;
+}
+
+.involved-card h2 {
+    color: #0c087f;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.involved-card p {
+    color: #30382A;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* CONTACT PAGE */
+
+.contact-hero {
+    background-color:#0c087f;
+    color: #F7F3E8;
+    text-align: center;
+    padding: 65px 30px;
+    margin: 30px auto;
+    border: 3px solid #0c087f;
+    border-radius: 20px;
+    max-width: 1150px;
+}
+
+.contact-hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-hero p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.contact-section {
+    background-color: #F7F3E8;
+    padding: 40px 20px;
+}
+
+.contact-card {
+    background-color: #F7F3E8;
+    border: 3px solid #0c087f;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.contact-card h2 {
+    color: #0c087f;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.contact-card p {
+    color: #30382A;
+    line-height: 1.8;
+}
+
+.contact-card a {
+    color:  
+}
+
+.contact-button {
+    background-color: #0c087f;
+    color: #F7F3E8;
+    border: 2px solid #0c087f;
+    border-radius: 8px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background-color: #F7F3E8;
+    color: #0c087f;
+}
+
+/* RESPONSIVE MOBILE NAVBAR */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 27px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+
+    .navbar .container {
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 18px;
+        padding: 20px 0;
+        background-color: var(--olive);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+}
+
+
+/* Active navigation link */
+
+.nav-links a.active {
+    color: var(--gold);
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+

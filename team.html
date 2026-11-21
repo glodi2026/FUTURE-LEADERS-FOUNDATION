@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | Future Leaders Foundation</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="container">
+
+        <a href="index.html" class="logo">future leaders foundation</a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="impact.html">Our Impact</a></li>
+            <li><a href="team.html" class="active">Our Team</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </div>
+</nav>
+    <!-- Team Introduction -->
+    <section class="team-hero">
+        <div class="container">
+            <h1>Meet Our Team</h1>
+            <p>
+                Our team is made up of dedicated individuals who share a
+                common commitment to empowering young people and transforming
+                communities. Together, we work to create opportunities,
+                develop leadership and promote positive social change.
+            </p>
+        </div>
+    </section>
+
+    <!-- Team Members -->
+    <section class="team-section">
+        <div class="container">
+            <div class="row">
+
+                <!-- Daniel -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-card">
+                        <img src="glodi .jpeg"
+                             alt="GLOGI"
+                             class="team-photo">
+                        <h2>GLODI MANGBAKO</h2>
+                        <h3>Executive Director</h3>
+                        <p>Provides leadership and guides the overall direction of the foundation.</p>
+                    </div>
+                </div>
+
+                <!-- Grace -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-card">
+                        <img src="CHERUBIN.jpeg"
+                             alt="CHERUBIN"
+                             class="team-photo">
+                        <h2>CHERUBIN YANGWA</h2>
+                        <h3>Program Coordinator</h3>
+                        <p>Coordinates programs and ensures activities are properly organized.</p>
+                    </div>
+                </div>
+
+                <!-- Michael -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-card">
+                        <img src="jeremie.jpeg"
+                             alt="JEREMIE MURULA"
+                             class="team-photo">
+                        <h2>JEREMIE MURULA</h2>
+                        <h3>Leadership Development Officer</h3>
+                        <p>Supports leadership training and personal development activities.</p>
+                    </div>
+                </div>
+
+                <!-- Esther -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-card">
+                        <img src="salama.jpeg"
+                             alt="SALAMA MINANI"
+                             class="team-photo">
+                        <h2>SALAMA MINANI</h2>
+                        <h3>Community Outreach Officer</h3>
+                        <p>Builds community relationships and coordinates outreach activities.</p>
+                    </div>
+                </div>
+
+                <!-- Samuel -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-card">
+                        <img src="augustin.jpeg"
+                             alt="AUGUSTIN KIPIMO"
+                             class="team-photo">
+                        <h2>AUGUSTIN KIPIMO</h2>
+                        <h3>Technology Coordinator</h3>
+                        <p>Promotes digital learning and technology development.</p>
+                    </div>
+                </div>
+
+                <!-- Ruth -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-card">
+                        <img src="aisha.jpeg"
+                             alt="AISHA ZUBERI"
+                             class="team-photo">
+                        <h2>AISHA ZUBERI</h2>
+                        <h3>Communications Officer</h3>
+                        <p>Manages communication and shares the foundation's activities.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+         <div class="social-icons">
+        <a href="https://www.facebook.com/share/1MSuFikEfE/?mibextid=wwXIfr" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://linkedin.com/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://wa.me/256794754402" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+        <p>&copy; 2026 Future Leaders Foundation. All Rights Reserved.</p>
+    </footer>
+      
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+
+            const isOpen = navLinks.classList.contains("active");
+
+            menuToggle.setAttribute("aria-expanded", isOpen);
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Close navigation menu" : "Open navigation menu"
+            );
+        });
+
+        document.querySelectorAll(".nav-links a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+    </script>
+
+</body>
+</html>
